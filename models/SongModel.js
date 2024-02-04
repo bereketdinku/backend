@@ -2,15 +2,17 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const songsSchema = new Schema({
   title: {
-    type: string,
+    type: String,
   },
   artist: {
-    type: string,
+    type: String,
   },
   album: {
-    type: string,
+    type: String,
   },
   generes: {
-    type: string,
+    type: String,
   },
 });
+const Song = mongoose.model("Song", songsSchema);
+module.exports = Song;

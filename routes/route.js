@@ -1,17 +1,18 @@
+const express = require("express");
 const router = express.Router();
 const {
-  createRecord,
-  getAllRecords,
+  createSong,
+  getAllSongs,
   getRecordById,
   updateRecordById,
   deleteRecordById,
 } = require("../controllers/SongController");
 
 // Create a new record
-router.post("/", createRecord);
+router.post("/", createSong);
 
 // Get all records
-router.get("/", getAllRecords);
+router.get("/", getAllSongs);
 
 // Get a single record by ID
 router.get("/:id", getRecordById);

@@ -66,8 +66,8 @@ const deleteRecordById = async (req, res, next) => {
   }
 };
 module.exports = {
-  createRecord,
-  getAllRecords,
+  createSong,
+  getAllSongs,
   getRecordById,
   updateRecordById,
   deleteRecordById,
