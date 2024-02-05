@@ -13,7 +13,7 @@ const createSong = async (req, res) => {
 const getAllSongs = async (req, res) => {
   try {
     const songs = await Song.find();
-    res.json({ songs });
+    res.json( songs );
   } catch (error) {
     console.error("Error fetching records:", error);
     res
