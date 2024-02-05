@@ -7,7 +7,7 @@ const router = require("./routes/route");
 const app = express();
 app.use(cors());
 mongoose.connect(
-  "mongodb+srv://bereketdinku:beki1234@cluster0.69ripac.mongodb.net/List"
+  "mongodb+srv://bereketdinku:beki1234@cluster0.69ripac.mongodb.net/songList"
 );
 const db = mongoose.connection;
 db.on("error", (err) => {
